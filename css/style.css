@@ -1,6 +1,7 @@
 /*----------------------------------------------------
 @File: Default Styles
-@Author: Rocky Ahmed
+@Author: Ro                        <div class="blog_item_img">
+ky Ahmed
 @URL: http://wethemez.com
 Author E-mail: rockybd1995@gmail.com
 
@@ -41,9 +42,14 @@ Table of Content:
 /*font Variables*/
 /*Color Variables*/
 /*=================== fonts ====================*/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Playfair+Display:400,700");
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&display=swap');
+
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
+*{
+  font-family: 'Outfit', sans-serif;
+}
 .list {
   list-style: none;
   margin: 0px;
@@ -62,12 +68,12 @@ a {
 body {
   line-height: 27px;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+
   font-weight: normal;
   color: #797979; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", serif;
+  
   font-weight: bold; }
 
 button:focus {
@@ -118,13 +124,13 @@ ul {
   max-width: 680px;
   margin: 0px auto 75px; }
   .main_title h2 {
-    font-family: "Open Sans", sans-serif;
+   
     font-size: 36px;
     color: #020a21;
     margin-bottom: 12px; }
   .main_title p {
     font-size: 14px;
-    font-family: "Playfair Display", serif;
+   
     font-weight: normal;
     line-height: 24px;
     color: #797979;
@@ -160,7 +166,7 @@ ul {
       margin-right: 45px; }
       .header_area .navbar .nav .nav-item .nav-link {
         font: 500 12px/80px "Open Sans", sans-serif;
-        text-transform: uppercase;
+        
         color: #020a21;
         padding: 0px;
         display: inline-block;
@@ -275,7 +281,7 @@ ul {
     display: inline-block;
     font-size: 14px;
     margin-right: 50px;
-    font-family: "Playfair Display", serif;
+   
     font-weight: normal;
     color: #797979;
     transition: all 300ms linear 0s; }
@@ -388,7 +394,7 @@ ul {
   top: 80px; }
 
 .feature-section {
-  background: url(../img/banner/pattern_bg.jpg) no-repeat center;
+
   background-size: cover;
   padding: 60px 0; }
   @media (max-width: 767px) {
@@ -396,10 +402,12 @@ ul {
       padding: 60px 0 30px; } }
 
 .card-feature {
-  padding: 40px 35px;
+  padding: 20px 35px;
   border: 0;
   border-radius: 0;
-  background: #fff;
+  background: white;
+  border-radius: 18px;
+
   transition: all 300ms linear 0s; }
   @media (max-width: 1200px) {
     .card-feature {
@@ -409,7 +417,8 @@ ul {
       margin-bottom: 30px; } }
   .card-feature__icon {
     margin-bottom: 12px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     transform: translateY(4px); }
     .card-feature__icon i {
       color: #0051d2;
@@ -432,7 +441,7 @@ ul {
     margin-bottom: 0;
     color: #797979; }
   .card-feature:hover {
-    background: #fff;
+    background: #f3f3f3;
     box-shadow: 0px 10px 20px 0px rgba(33, 20, 106, 0.1); }
 
 /*---------------------------------------------------- */
@@ -441,11 +450,11 @@ ul {
 ============================================================================================ */
 /* 5. Banner */
 .banner-area {
-  min-height: 800px;
-  background-image: url("../img/banner/home-banner.jpg");
+  min-height: 500px;
+  background-image: url("../img/doctor.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size:contain ;
   position: relative; }
   @media (max-width: 767px) {
     .banner-area {
@@ -454,7 +463,7 @@ ul {
     font-size: 45px;
     color: #000;
     font-weight: 600;
-    font-family: "Playfair Display", serif;
+   
     margin-bottom: 30px; }
     @media (max-width: 767px) {
       .banner-area h1 {
@@ -499,7 +508,7 @@ ul {
       .blog_banner .banner_inner .blog_b_text h2 {
         font-size: 60px;
         font-weight: bold;
-        font-family: "Open Sans", sans-serif;
+       
         line-height: 66px;
         margin-bottom: 15px; }
       .blog_banner .banner_inner .blog_b_text p {
@@ -528,7 +537,7 @@ ul {
     .banner_area .banner_inner .banner_content h2 {
       color: #000;
       font-size: 40px;
-      font-family: "Playfair Display", serif;
+     
       margin-bottom: 12px;
       font-weight: bold; }
     .banner_area .banner_inner .banner_content p {
@@ -539,7 +548,7 @@ ul {
       .banner_area .banner_inner .banner_content .page_link a {
         font-size: 14px;
         color: #000;
-        font-family: "Open Sans", sans-serif;
+       
         margin-right: 7px;
         position: relative;
         font-weight: 500; }
@@ -1460,7 +1469,7 @@ ul {
       text-align: center;
       color: #0051d2;
       padding-bottom: 10px;
-      font-family: "Playfair Display", serif; }
+      }
     .modal-message .modal-dialog .modal-content .modal-header p {
       display: block; }
 
@@ -1475,7 +1484,7 @@ ul {
     display: block;
     color: #33363e;
     font-size: 16px;
-    font-family: "Playfair Display", serif;
+   
     margin-bottom: 10px; }
   .appointment-area .appointment-form input {
     display: block;
@@ -2798,7 +2807,7 @@ h6 {
   background: #0051d2;
   padding: 0px 18px;
   color: #fff;
-  font-family: "Playfair Display", serif;
+ 
   font-size: 14px;
   font-weight: 400;
   line-height: 48px;
@@ -2819,8 +2828,8 @@ h6 {
   display: inline-block;
   border: 1px solid #0051d2;
   padding: 0px 18px;
-  color: #33363e;
-  font-family: "Playfair Display", serif;
+  color: violet;
+ 
   font-size: 14px;
   font-weight: 400;
   line-height: 48px;
@@ -2833,7 +2842,7 @@ h6 {
   text-transform: capitalize;
   transition: all 300ms linear 0s; }
   .main_btn_light:hover {
-    background: #0051d2;
+    background: violet;
     color: #fff; }
 
 .main_btn2 {
@@ -2841,7 +2850,7 @@ h6 {
   background: #fff;
   padding: 0px 32px;
   color: #020a21;
-  font-family: "Playfair Display", serif;
+ 
   font-size: 14px;
   font-weight: 500;
   line-height: 48px;
@@ -2863,7 +2872,7 @@ h6 {
   background: #0051d2;
   padding: 0px 50px;
   color: #fff;
-  font-family: "Playfair Display", serif;
+ 
   font-size: 13px;
   font-weight: 500;
   line-height: 50px;
@@ -2883,7 +2892,7 @@ h6 {
   background: #f9f9ff;
   padding: 0px 35px;
   color: #020a21;
-  font-family: "Playfair Display", serif;
+ 
   font-size: 13px;
   font-weight: 500;
   line-height: 34px;
@@ -2907,7 +2916,7 @@ h6 {
   display: inline-block;
   border-radius: 5px;
   font-size: 13px;
-  font-family: "Playfair Display", serif;
+ 
   font-weight: 500;
   transition: all 300ms linear 0s; }
   .black_btn:hover {
@@ -2916,7 +2925,7 @@ h6 {
 
 .link_one {
   font-size: 15px;
-  font-family: "Playfair Display", serif;
+ 
   color: #33363e;
   letter-spacing: 1.5px;
   position: relative; }
@@ -2935,7 +2944,7 @@ h6 {
 
 /*=================== custom button rule start ====================*/
 .button {
-  font-family: "Playfair Display", serif;
+ 
   display: inline-block;
   border: 1px solid transparent;
   font-size: 15px;
@@ -3141,7 +3150,7 @@ h6 {
   .hotline-area span {
     font-size: 60px;
     font-weight: 800;
-    font-family: "Open Sans", sans-serif;
+   
     margin-bottom: 28px;
     display: block; }
     @media (max-width: 767px) {
@@ -3208,7 +3217,7 @@ h6 {
     margin-bottom: 24px; }
   .card-service__link {
     font-size: 15px;
-    font-family: "Playfair Display", serif;
+   
     color: #33363e;
     letter-spacing: 1.5px;
     position: relative; }
@@ -3244,60 +3253,7 @@ h6 {
 /*----------------------------------------------------*/
 /* About Area css
 ============================================================================================ */
-.about-area {
-  background: #f7f7f7;
-  background-image: url(../img/background/bg_1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  padding-top: 400px;
-  padding-bottom: 110px;
-  margin-top: -180px; }
-  @media (max-width: 991px) {
-    .about-area {
-      padding-top: 250px; } }
-  .about-area:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 50%;
-    top: 0;
-    background: url(../img/banner/about1.png);
-    backgroundsize: auto;
-    z-index: 11;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: right bottom; }
-    @media (max-width: 991px) {
-      .about-area:after {
-        display: none; } }
-  @media (min-width: 1199px) and (max-width: 1199px) {
-    .about-area .about-content {
-      padding-top: 30px; } }
-  @media (max-width: 991px) {
-    .about-area .about-content {
-      margin-top: 0;
-      padding-left: 0; }
-      .about-area .about-content h4 br {
-        display: none; }
-      .about-area .about-content p br {
-        display: none; } }
-  .about-area .about-content h4 {
-    font-size: 36px;
-    color: #33363e;
-    font-family: "Playfair Display", serif;
-    margin-bottom: 32px;
-    line-height: 46px; }
-  .about-area .about-content h6 {
-    font-size: 16px;
-    font-weight: 400;
-    color: #0051d2;
-    line-height: 25px;
-    margin-bottom: 25px; }
-  .about-area .about-content p {
-    font-size: 15px;
-    margin-bottom: 30px;
-    line-height: 26px; }
+
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
@@ -3420,3 +3376,10 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+.location{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10p;
+  padding: 40px 60px;
+
+}

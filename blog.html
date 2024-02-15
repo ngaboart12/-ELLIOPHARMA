@@ -16,8 +16,9 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
-<body>
+<body class="overflow-x-hidden">
 
     <!--================Header Menu Area =================-->
     <header class="header_area">
@@ -40,35 +41,71 @@
         </div>  
         <div class="main_menu">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="department.html">Department</a></li> 
-                            <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>    
-                            <li class="nav-item submenu dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="element.html">element</a></li>
-                                </ul>
-                            </li> 
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+              <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a class="navbar-brand logo_h" href="index.html"
+                  ><img src="img/logo.png" alt=""
+                /></a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="" id="navbarSupportedContent">
+                  <ul class="nav navbar-nav menu_nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about-us.html">About</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link" href="department.html">Department</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="doctors.html">Doctors</a>
+                    </li> -->
+                    <li class="nav-item submenu dropdown">
+                      <a
+                        href="#"
+                        class="nav-link dropdown-toggle"
+                        data-toggle="dropdown"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >Blog</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li class="nav-item">
+                          <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="single-blog.html"
+                            >Blog Details</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="element.html">element</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </nav>
-        </div>
+          </div>
     </header>
     <!--================Header Menu Area =================-->
 
@@ -97,317 +134,178 @@
 
 
   <!--================Blog Area =================-->
-  <section class="blog_area area-padding">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-8 mb-5 mb-lg-0">
-                  <div class="blog_left_sidebar">
+  <section class="">
+      <div class="">
+          <div class="">
+              <div class="p-10">
+                  <div class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
                       <article class="blog_item">
-                        <div class="blog_item_img">
-                          <img class="card-img rounded-0" src="img/blog/main-blog/m-blog-1.jpg" alt="">
-                          <a href="#" class="blog_item_date">
-                            <h3>15</h3>
-                            <p>Jan</p>
-                          </a>
-                        </div>
-                        
-                        <div class="blog_details">
-                            <a class="d-inline-block" href="single-blog.html">
-                                <h2>Google inks pact for new 35-storey office</h2>
-                            </a>
-                            <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
-                            <ul class="blog-info-link">
-                              <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
-                              <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
-                            </ul>
-                        </div>
-                      </article>
-                      
-                      <article class="blog_item">
-                        <div class="blog_item_img">
-                          <img class="card-img rounded-0" src="img/blog/main-blog/m-blog-2.jpg" alt="">
-                          <a href="#" class="blog_item_date">
-                            <h3>15</h3>
-                            <p>Jan</p>
-                          </a>
-                        </div>
-                        
-                        <div class="blog_details">
-                            <a class="d-inline-block" href="single-blog.html">
-                                <h2>Google inks pact for new 35-storey office</h2>
-                            </a>
-                            <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
-                            <ul class="blog-info-link">
-                              <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
-                              <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
-                            </ul>
-                        </div>
-                      </article>
+                        <div class="relative">
+                            <div class="h-[35vh] overflow-hidden">
 
-                      <article class="blog_item">
-                        <div class="blog_item_img">
-                          <img class="card-img rounded-0" src="img/blog/main-blog/m-blog-3.jpg" alt="">
-                          <a href="#" class="blog_item_date">
-                            <h3>15</h3>
-                            <p>Jan</p>
-                          </a>
-                        </div>
-                        
-                        <div class="blog_details">
-                            <a class="d-inline-block" href="single-blog.html">
-                                <h2>Google inks pact for new 35-storey office</h2>
-                            </a>
-                            <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
-                            <ul class="blog-info-link">
-                              <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
-                              <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
-                            </ul>
-                        </div>
-                      </article>
-
-                      <article class="blog_item">
-                        <div class="blog_item_img">
-                          <img class="card-img rounded-0" src="img/blog/main-blog/m-blog-4.jpg" alt="">
-                          <a href="#" class="blog_item_date">
-                            <h3>15</h3>
-                            <p>Jan</p>
-                          </a>
-                        </div>
-                        
-                        <div class="blog_details">
-                            <a class="d-inline-block" href="single-blog.html">
-                                <h2>Google inks pact for new 35-storey office</h2>
-                            </a>
-                            <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
-                            <ul class="blog-info-link">
-                              <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
-                              <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
-                            </ul>
-                        </div>
-                      </article>
-
-                      <article class="blog_item">
-                        <div class="blog_item_img">
-                          <img class="card-img rounded-0" src="img/blog/main-blog/m-blog-5.jpg" alt="">
-                          <a href="#" class="blog_item_date">
-                            <h3>15</h3>
-                            <p>Jan</p>
-                          </a>
-                        </div>
-                        
-                        <div class="blog_details">
-                            <a class="d-inline-block" href="single-blog.html">
-                                <h2>Google inks pact for new 35-storey office</h2>
-                            </a>
-                            <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
-                            <ul class="blog-info-link">
-                              <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
-                              <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
-                            </ul>
-                        </div>
-                      </article>
-                      
-
-
-                      <nav class="blog-pagination justify-content-center d-flex">
-                          <ul class="pagination">
-                              <li class="page-item">
-                                  <a href="#" class="page-link" aria-label="Previous">
-                                      <i class="ti-angle-left"></i>
-                                  </a>
-                              </li>
-                              <li class="page-item">
-                                  <a href="#" class="page-link">1</a>
-                              </li>
-                              <li class="page-item active">
-                                  <a href="#" class="page-link">2</a>
-                              </li>
-                              <li class="page-item">
-                                  <a href="#" class="page-link" aria-label="Next">
-                                      <i class="ti-angle-right"></i>
-                                  </a>
-                              </li>
-                          </ul>
-                      </nav>
-                  </div>
-              </div>
-              <div class="col-lg-4">
-                  <div class="blog_right_sidebar">
-                      <aside class="single_sidebar_widget search_widget">
-                          <form action="#">
-                            <div class="form-group">
-                              <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Search Keyword">
-                                <div class="input-group-append">
-                                  <button class="btn" type="button"><i class="ti-search"></i></button>
-                                </div>
-                              </div>
+                                <img class="card-img  w-full h-full object-cover rounded-0" height="1000"  src="img/blog/pharmacy-blog-1.jpg" alt="">
                             </div>
-                            <button class="button rounded-0 primary-bg text-white w-100" type="submit">Search</button>
-                          </form>
-                      </aside>
+                         <div class=" text-white absolute top-[30vh] left-10 p-2 w-[80px] h-[50px] flex items-center justify-center rounded-[4px] bg-blue-600">
+                            <h1 class="text-[18px] font-[200]">15 Jan</h1>
+                         </div>
+                        </div>
+                        
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="single-blog.html">
+                                <h2>Google inks pact for new 35-storey office</h2>
+                            </a>
+                            <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <ul class="blog-info-link">
+                              <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
+                              <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                            </ul>
+                        </div>
+                      </article>
+                      <article class="blog_item">
+                        <div class="relative">
+                            <div class="h-[35vh] overflow-hidden">
 
-                      <aside class="single_sidebar_widget post_category_widget">
-                        <h4 class="widget_title">Category</h4>
-                        <ul class="list cat-list">
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Resaurant food</p>
-                                    <p>(37)</p>
+                                <img class="card-img  w-full h-full object-cover rounded-0" height="1000"  src="img/blog/pharmacy-blog-2.jpg" alt="">
+                            </div>
+                         <div class=" text-white absolute top-[30vh] left-10 p-2 w-[80px] h-[50px] flex items-center justify-center rounded-[4px] bg-blue-600">
+                            <h1 class="text-[18px] font-[200]">23 June</h1>
+                         </div>
+                        </div>
+                        
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="single-blog.html">
+                                <h2>Google inks pact for new 35-storey office</h2>
+                            </a>
+                            <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <ul class="blog-info-link">
+                              <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
+                              <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                            </ul>
+                        </div>
+                      </article>
+                      <article class="blog_item">
+                        <div class="relative">
+                            <div class="h-[35vh] overflow-hidden">
+
+                                <img class="card-img  w-full h-full object-cover rounded-0" height="1000"  src="img/blog/pharmacy-blog-1.jpg" alt="">
+                            </div>
+                         <div class=" text-white absolute top-[30vh] left-10 p-2 w-[80px] h-[50px] flex items-center justify-center rounded-[4px] bg-blue-600">
+                            <h1 class="text-[18px] font-[200]">15 Jan</h1>
+                         </div>
+                        </div>
+                        
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="single-blog.html">
+                                <h2>Google inks pact for new 35-storey office</h2>
+                            </a>
+                            <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <ul class="blog-info-link">
+                              <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
+                              <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                            </ul>
+                        </div>
+                      </article>
+                      <article class="blog_item">
+                        <div class="relative">
+                            <div class="h-[35vh] overflow-hidden">
+
+                                <img class="card-img  w-full h-full object-cover rounded-0" height="1000"  src="img/blog/pharmacy-blog-1.jpg" alt="">
+                            </div>
+                         <div class=" text-white absolute top-[30vh] left-10 p-2 w-[80px] h-[50px] flex items-center justify-center rounded-[4px] bg-blue-600">
+                            <h1 class="text-[18px] font-[200]">15 Jan</h1>
+                         </div>
+                        </div>
+                        
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="single-blog.html">
+                                <h2>Google inks pact for new 35-storey office</h2>
+                            </a>
+                            <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <ul class="blog-info-link">
+                              <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
+                              <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                            </ul>
+                        </div>
+                      </article>
+                      <article class="blog_item">
+                        <div class="relative">
+                            <div class="h-[35vh] overflow-hidden">
+
+                                <img class="card-img  w-full h-full object-cover rounded-0" height="1000"  src="img/blog/pharmacy-blog-1.jpg" alt="">
+                            </div>
+                         <div class=" text-white absolute top-[30vh] left-10 p-2 w-[80px] h-[50px] flex items-center justify-center rounded-[4px] bg-blue-600">
+                            <h1 class="text-[18px] font-[200]">15 Jan</h1>
+                         </div>
+                        </div>
+                        
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="single-blog.html">
+                                <h2>Google inks pact for new 35-storey office</h2>
+                            </a>
+                            <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <ul class="blog-info-link">
+                              <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
+                              <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                            </ul>
+                        </div>
+                      </article>
+                      <article class="blog_item">
+                        <div class="relative">
+                            <div class="h-[35vh] overflow-hidden">
+
+                                <img class="card-img  w-full h-full object-cover rounded-0" height="1000"  src="img/blog/pharmacy-blog-1.jpg" alt="">
+                            </div>
+                         <div class=" text-white absolute top-[30vh] left-10 p-2 w-[80px] h-[50px] flex items-center justify-center rounded-[4px] bg-blue-600">
+                            <h1 class="text-[18px] font-[200]">15 Jan</h1>
+                         </div>
+                        </div>
+                        
+                        <div class="blog_details">
+                            <a class="d-inline-block" href="single-blog.html">
+                                <h2>Google inks pact for new 35-storey office</h2>
+                            </a>
+                            <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+                            <ul class="blog-info-link">
+                              <li><a href="#"><i class="far fa-user"></i> Travel, Lifestyle</a></li>
+                              <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                            </ul>
+                        </div>
+                      </article>
+                      
+                   
+
+                  
+
+                   
+                   
+                      
+
+
+                    </div>
+                    <nav class="blog-pagination justify-content-center d-flex">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a href="#" class="page-link" aria-label="Previous">
+                                    <i class="ti-angle-left"></i>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Travel news</p>
-                                    <p>(10)</p>
-                                </a>
+                            <li class="page-item">
+                                <a href="#" class="page-link">1</a>
                             </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Modern technology</p>
-                                    <p>(03)</p>
-                                </a>
+                            <li class="page-item active">
+                                <a href="#" class="page-link">2</a>
                             </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Product</p>
-                                    <p>(11)</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Inspiration</p>
-                                    <p>21</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex">
-                                    <p>Health Care (21)</p>
-                                    <p>09</p>
+                            <li class="page-item">
+                                <a href="#" class="page-link" aria-label="Next">
+                                    <i class="ti-angle-right"></i>
                                 </a>
                             </li>
                         </ul>
-                      </aside>
-
-                      <aside class="single_sidebar_widget popular_post_widget">
-                          <h3 class="widget_title">Recent Post</h3>
-                          <div class="media post_item">
-                              <img src="img/blog/popular-post/post1.jpg" alt="post">
-                              <div class="media-body">
-                                  <a href="single-blog.html">
-                                      <h3>From life was you fish...</h3>
-                                  </a>
-                                  <p>January 12, 2019</p>
-                              </div>
-                          </div>
-                          <div class="media post_item">
-                              <img src="img/blog/popular-post/post2.jpg" alt="post">                              
-                              <div class="media-body">
-                                  <a href="single-blog.html">
-                                      <h3>The Amazing Hubble</h3>
-                                  </a>
-                                  <p>02 Hours ago</p>
-                              </div>
-                          </div>
-                          <div class="media post_item">
-                              <img src="img/blog/popular-post/post3.jpg" alt="post">                              
-                              <div class="media-body">
-                                  <a href="single-blog.html">
-                                      <h3>Astronomy Or Astrology</h3>
-                                  </a>
-                                  <p>03 Hours ago</p>
-                              </div>
-                          </div>
-                          <div class="media post_item">
-                              <img src="img/blog/popular-post/post4.jpg" alt="post">
-                              <div class="media-body">
-                                  <a href="single-blog.html">
-                                      <h3>Asteroids telescope</h3>
-                                  </a>
-                                  <p>01 Hours ago</p>
-                              </div>
-                          </div>
-                      </aside>
-                      <aside class="single_sidebar_widget tag_cloud_widget">
-                          <h4 class="widget_title">Tag Clouds</h4>
-                          <ul class="list">
-                              <li>
-                                  <a href="#">project</a>
-                              </li>
-                              <li>
-                                  <a href="#">love</a>
-                              </li>
-                              <li>
-                                  <a href="#">technology</a>
-                              </li>
-                              <li>
-                                  <a href="#">travel</a>
-                              </li>
-                              <li>
-                                  <a href="#">restaurant</a>
-                              </li>
-                              <li>
-                                  <a href="#">life style</a>
-                              </li>
-                              <li>
-                                  <a href="#">design</a>
-                              </li>
-                              <li>
-                                  <a href="#">illustration</a>
-                              </li>
-                          </ul>
-                      </aside>
-
-
-                      <aside class="single_sidebar_widget instagram_feeds">
-                        <h4 class="widget_title">Instagram Feeds</h4>
-                        <ul class="instagram_row flex-wrap">
-                            <li>
-                                <a href="#">
-                                  <img class="img-fluid" src="img/instagram/widget-i1.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                  <img class="img-fluid" src="img/instagram/widget-i2.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                  <img class="img-fluid" src="img/instagram/widget-i3.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                  <img class="img-fluid" src="img/instagram/widget-i4.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                  <img class="img-fluid" src="img/instagram/widget-i5.png" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                  <img class="img-fluid" src="img/instagram/widget-i6.png" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                      </aside>
-
-
-                      <aside class="single_sidebar_widget newsletter_widget">
-                        <h4 class="widget_title">Newsletter</h4>
-
-                        <form action="#">
-                          <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Enter email" required>
-                          </div>
-                          <button class="button rounded-0 primary-bg text-white w-100" type="submit">Subscribe</button>
-                        </form>
-                      </aside>
-                  </div>
+                    </nav>
               </div>
+           
+            
+              </div> -->
           </div>
       </div>
   </section>

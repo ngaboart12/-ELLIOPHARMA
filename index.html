@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="img/favicon.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>ELLIOPHARMA LTD</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -13,13 +14,15 @@
     <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-c2lHlM5QWCXefoM9RdbK3KA6PfWRo/ogHCaD0b+PzPQ9vxs/R0Ds/wG1Q1pmxE7PlPObeY8eDqmXB4XqFuXVsA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body class="w-full overflow-x-hidden">
 
     <!--================Header Menu Area =================-->
     <header class="header_area">
@@ -51,12 +54,12 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <div class="" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+                            <li class="nav-item "><a class="nav-link" href="index.html">Home</a></li> 
                             <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
                             <!-- <li class="nav-item"><a class="nav-link" href="department.html">Department</a></li>  -->
-                            <!-- <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>     -->
+                             <!-- <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>    -->
                             <li class="nav-item submenu dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
                                 <ul class="dropdown-menu">
@@ -77,15 +80,16 @@
     <!--================Home Banner Area =================-->
 
     <section class="banner-area d-flex align-items-center">
-        <div class="container">
+        <div class="container" >
             <div class="row">
                 <div class="col-md-8 col-lg-6 col-xl-5">
-                    <h1>Making Health<br>
-                    Care Better Together</h1>
+                     
+                    <h1>Making <span class="text-pink-500" >Health</span><br>
+                    Care Better <span style="color: #0051d2;"> Together</span></h1>
                     <p>Also you dry creeping beast multiply fourth abundantly our itsel signs bring our. Won form living. Whose dry you seasons divide given gathering great in whose you'll greater let livein form beast  sinthete
                     better together these place absolute right.</p>
                     <a href="" class="main_btn">Make an Appointment</a>
-                    <a href="" class="main_btn_light">View Department</a>
+                    <a href="" class="main_btn_light" style="border: 1px solid violet;font-size: 14px;font-weight: 400;">View Department</a>
                 </div>
             </div>
         </div>
@@ -95,37 +99,45 @@
 
 
  <!--================ Feature section start =================-->
-<section class="feature-section">
+<section class="feature-section" data-aos-duration="2000" data-aos="zoom-in">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <div class="card card-feature text-center text-lg-left">
-                    <h3 class="card-feature__title">
+            <div class="col-md-4" >
+                <div class="card card-feature text-center text-lg-left" style="background-color: rgb(238, 238, 238);">
+                    <h3 class="card-feature__title" style="text-align: center;">
                         <span class="card-feature__icon">
-                            <i class="ti-medall"></i>
-                        </span>Expert Pharmacists
+                            <div style=" background-color: white; width: 70px;display: flex; align-items: center;justify-content: center; height: 70px; border-radius: 50%; margin: 0px auto;">
+                            <i class="fa fa-pills" style="font-size: 40px;font: 900;margin: 0px auto;"></i>
+                            </div>
+                        </span class="animate__animated animate__bounce">Expert Pharmacists
                     </h3>
-                    <p class="card-feature__subtitle">Receive personalized guidance from our team of experienced and knowledgeable pharmacists dedicated to your health and well-being.</p>
+                    <p class="card-feature__subtitle" style=" text-align: center;">Receive personalized guidance from our team of experienced and knowledgeable pharmacists dedicated to your health and well-being.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card card-feature text-center text-lg-left">
-                    <h3 class="card-feature__title">
+            <div class="col-md-4" >
+                <div class="card card-feature text-center text-lg-left" style="background-color: rgb(238, 238, 238);">
+                    <h3 class="card-feature__title" style="text-align: center;">
                         <span class="card-feature__icon">
-                            <i class="ti-package"></i>
+                            <div style=" background-color: white; width: 70px;display: flex; align-items: center;justify-content: center; height: 70px; border-radius: 50%; margin: 0px auto;">
+
+                                <i class="fa fa-truck" style="font-size: 40px;font: 900;margin: 0px auto;color: violet;" ></i>
+                            </div>
                         </span>Medication Delivery
                     </h3>
-                    <p class="card-feature__subtitle">Enjoy the convenience of doorstep delivery for your prescribed medications, ensuring a hassle-free experience for our valued customers.</p>
+                    <p class="card-feature__subtitle" style=" text-align: center;">Enjoy the convenience of doorstep delivery for your prescribed medications, ensuring a hassle-free experience for our valued customers.</p>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card card-feature text-center text-lg-left">
-                    <h3 class="card-feature__title">
+                <div class="card card-feature text-center text-lg-left" style="background-color: rgb(238, 238, 238);">
+                    <h3 class="card-feature__title" style="text-align: center;">
                         <span class="card-feature__icon">
-                            <i class="ti-settings"></i>
+                            <div style=" background-color: white; width: 70px;display: flex; align-items: center;justify-content: center; height: 70px; border-radius: 50%; margin: 0px auto;">
+                            <i class="fa fa-spa" style="font-size: 40px;font: 900;margin: 0px auto;"></i>
+                            </div>
+
                         </span>Customized Wellness Plans
                     </h3>
-                    <p class="card-feature__subtitle">Tailored wellness plans designed to meet your specific health goals, providing a holistic approach to your overall well-being.</p>
+                    <p class="card-feature__subtitle" style="text-align: center;">Tailored wellness plans designed to meet your specific health goals, providing a holistic approach to your overall well-being.</p>
                 </div>
             </div>
         </div>
@@ -140,79 +152,79 @@
 <!-- Service section start -->
 <div class="service-area area-padding-top">
     <div class="container">
-        <div class="area-heading row">
+        <div class="area-heading row" data-aos-duration="2000" data-aos="zoom-in" >
             <div class="col-md-5 col-xl-4">
-                <h3>Comprehensive<br>Pharmacy Services in Bugesera</h3>
+                <h3 >Comprehensive<br><span style="color: #0051d2;">Pharmacy  Services</span> in Bugesera</h3>
             </div>
             <div class="col-md-7 col-xl-8">
                 <p>Our pharmacy in Bugesera District is dedicated to providing a range of essential services to promote community health and well-being.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
-                    <span class="card-service__icon">
+            <div class="col-md-6 col-lg-4" data-aos-duration="2000" data-aos="fade-down">
+                <div class="card-service text-center text-lg-left mb-4 mb-lg-0" style="background-color: rgb(245, 245, 245);">
+                    <span class="card-service__icon"  style="background-color: white;">
                         <i class="fas fa-pills"></i>
                     </span>
                     <h3 class="card-service__title">Medication Dispensing</h3>
                     <p class="card-service__subtitle">Accurate and efficient dispensing of prescribed medications to ensure patients receive the right treatments for their health needs.</p>
-                    <a class="card-service__link" href="#">Learn More</a>
+                    <!-- <a class="card-service__link" href="#">Learn More</a> -->
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-4" data-aos-duration="2000" data-aos="fade-up">
                 <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
-                    <span class="card-service__icon">
-                        <i class="fas fa-user-md"></i> <!-- Use an alternative icon class -->
+                    <span class="card-service__icon" style="background-color: violet;">
+                        <i class="fas fa-user-md" style="color: white;font-size: 20px;"></i> <!-- Use an alternative icon class -->
                     </span>
                     <h3 class="card-service__title">Health Consultation</h3>
                     <p class="card-service__subtitle">Personalized advice from our experienced pharmacists on medication usage, potential side effects, and general health queries.</p>
-                    <a class="card-service__link" href="#">Learn More</a>
+                    <!-- <a class="card-service__link" href="#">Learn More</a> -->
                 </div>
             </div>
             
 
-            <div class="col-md-6 col-lg-4">
-                <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
-                    <span class="card-service__icon">
+            <div class="col-md-6 col-lg-4" data-aos-duration="2000" data-aos="fade-down">
+                <div class="card-service text-center text-lg-left mb-4 mb-lg-0" style="background-color: rgb(245, 245, 245);">
+                    <span class="card-service__icon" style="background-color: white;">
                         <i class="fas fa-first-aid"></i>
                     </span>
                     <h3 class="card-service__title">First Aid Supplies</h3>
                     <p class="card-service__subtitle">Accessible first aid essentials to address minor injuries and emergencies. We provide a range of quality first aid products for your safety.</p>
-                    <a class="card-service__link" href="#">Learn More</a>
+                    <!-- <a class="card-service__link" href="#">Learn More</a> -->
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
-                    <span class="card-service__icon">
-                        <i class="fas fa-heartbeat"></i>
+                    <span class="card-service__icon" style="background-color: violet;">
+                        <i class="fas fa-heartbeat" style="color: white;font-size: 20px;"></i>
                     </span>
                     <h3 class="card-service__title">Heart Health Monitoring</h3>
                     <p class="card-service__subtitle">Regular blood pressure checks and monitoring services to promote heart health and prevent cardiovascular issues.</p>
-                    <a class="card-service__link" href="#">Learn More</a>
+                    <!-- <a class="card-service__link" href="#">Learn More</a> -->
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
-                <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
-                    <span class="card-service__icon">
+                <div class="card-service text-center text-lg-left mb-4 mb-lg-0" style="background-color: rgb(245, 245, 245);background-color: rgb(245, 245, 245);">
+                    <span class="card-service__icon" style="background-color: white;">
                         <i class="fas fa-syringe"></i>
                     </span>
                     <h3 class="card-service__title">Vaccination Services</h3>
                     <p class="card-service__subtitle">Convenient and reliable vaccination services to protect against various diseases. Stay up-to-date on essential immunizations.</p>
-                    <a class="card-service__link" href="#">Learn More</a>
+                    <!-- <a class="card-service__link" href="#">Learn More</a> -->
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="card-service text-center text-lg-left mb-4 mb-lg-0">
-                    <span class="card-service__icon">
-                        <i class="fas fa-capsules"></i>
+                    <span class="card-service__icon" style="background-color: violet;">
+                        <i class="fas fa-capsules" style="color: white; font-size:20px ;"></i>
                     </span>
                     <h3 class="card-service__title">Medication Counseling</h3>
                     <p class="card-service__subtitle">In-depth counseling on medication usage, potential interactions, and lifestyle adjustments to optimize treatment outcomes.</p>
-                    <a class="card-service__link" href="#">Learn More</a>
+                    <!-- <a class="card-service__link" href="#">Learn More</a> -->
                 </div>
             </div>
         </div>
@@ -222,22 +234,28 @@
 
 
   <!--================ About Area =================-->
-<section class="about-area">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-6 offset-xl-7 col-xl-5">
-                <div class="about-content">
-                    <h2>Welcome to ELLIOPHARMA LTD</h2>
-                    <h5>Your Trusted Partner in Healthcare</h5>
+<section data-aos-duration="800" data-aos="zoom-in" class="about-area py-20">
+    <div class="container" >
+        <div class="flex flex-col md:flex-row gap-[20px] w-full" >
+            <div class="relative p-[10px] sm:p-[20px] md:p-[40px] w-full md:w-1/2" >
+                <img src="./img/welcome.png" alt="" style="border-radius: 12px;">
+                <div style="width: 100px; height: 100px;border-radius: 50%;background-color: white;border:2px solid rgb(168, 168, 168);position: absolute;top: 20px;right: 20px;display: flex;flex-direction: column; text-align: center;justify-content: center;">
+                    <span style="color: black;font-weight: 900;font-size: 18px;">25+</span>
+                    <span style="line-height: 12px;color: black;">Years Experience</span>
+                </div>
+            </div>
+           
+                <div class="about-content py-10 flex flex-col gap-[10px] w-full md:w-1/2">
+                    <h2 style="color: black;" class="text-[24px] font-[900]">Welcome to <span style="color: #0051d2;">ELLIOPHARMA</span> LTD</h2>
+                    <h5 style="color: violet;font-weight: 400;">Your Trusted Partner in Healthcare</h5>
                     <p>At ELLIOPHARMA LTD, we strive to provide exceptional healthcare solutions tailored to meet the unique needs of our community. Our commitment goes beyond dispensing medications; we are your dedicated partners on the journey to optimal health and well-being.</p>
 
                     <p>With a focus on customer-centric care, our team of experienced pharmacists ensures accurate medication dispensing and offers personalized health consultations. We believe in empowering individuals with knowledge about their medications, promoting a healthier lifestyle, and preventing health issues.</p>
 
                     <p>Explore the difference of ELLIOPHARMA LTD and discover a world where health meets personalized care. Join us in fostering a community of well-informed and healthier individuals.</p>
 
-                    <a class="link_one" href="#">Learn More</a>
                 </div>
-            </div>
+          
         </div>
     </div>
 </section>
@@ -325,7 +343,7 @@
         <div class="appointment-inner">
             <div class="row">
                 <div class="col-sm-12 col-lg-5 offset-lg-1">
-                    <h2>Have Questions About Your Medication?</h2>
+                    <h2 style="color: black; " class="text-[28px] font-[800]">Have Questions About Your Medication?</h2>
                     <div class="accordion" id="accordionExample">
                         <!-- FAQ Section -->
                         <div class="card">
@@ -337,7 +355,7 @@
                                 </h5>
                             </div>
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="card-body">
+                                <div class="card-body text-black">
                                     Our knowledgeable pharmacists can provide clear instructions on the proper use and dosage of your prescribed medications.
                                 </div>
                             </div>
@@ -353,7 +371,7 @@
                                 </h5>
                             </div>
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                                <div class="card-body">
+                                <div class="card-body text-black">
                                     Our pharmacists are available to discuss potential side effects, their management, and provide guidance on when to seek further medical attention.
                                 </div>
                             </div>
@@ -369,7 +387,7 @@
                                 </h5>
                             </div>
                             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                                <div class="card-body">
+                                <div class="card-body text-black">
                                     Absolutely! Our team can guide you on choosing the right over-the-counter medications and provide helpful insights on their usage.
                                 </div>
                             </div>
@@ -380,22 +398,22 @@
                 <!-- Appointment Form -->
                 <div class="col-lg-5">
                     <div class="appointment-form">
-                        <h2>Request Assistance or Make an Appointment</h2>
+                        <h2 style="color: #0051d2;" class="text-[28px] font-[800] ">Request Assistance or Make an Appointment</h2>
                         <form action="#">
                             <div class="form-group">
                                 <label>Full Name</label>
-                                <input type="text" placeholder="Your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'" required>
+                                <input type="text" placeholder="Your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'" required class="outline-none bg-gray-100">
                             </div>
                             <div class="form-group">
                                 <label>Email</label>
-                                <input type="email" placeholder="Your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email'" required> 
+                                <input type="email" placeholder="Your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email'" required class="outline-none bg-gray-100"> 
                             </div>
                             <div class="form-group">
                                 <label>Message</label>
-                                <textarea name="message" cols="20" rows="7"  placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required></textarea>
+                                <textarea name="message" cols="20" rows="7"  placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required class="outline-none bg-gray-100"></textarea>
                             </div>
                             <p>If you need urgent assistance or have questions related to your medication, feel free to reach out. We're here to help!</p>
-                            <button type="submit" class="main_btn">Request Assistance</button>
+                            <button type="submit" class="main_btn bg-blue-700">Request Assistance</button>
                         </form>
                     </div>
                 </div>
@@ -403,7 +421,41 @@
         </div>
     </div>
 </section>
-<!--================ Appointment Area End =================-->
+<section class="w-full flex flex-col md:flex-row  gap-[20px]  px-[10px] sm:px-[50px] md:px-[100px] py-10">
+    <div class="details flex flex-col gap-[10px] items-center md:items-start w-full md:w-1/2">
+        <span class="text-[24px] text-black font-[700]">OUR SCHEDULE</span>
+        <div class="flex flex-row md:flex-col gap-[10px] items-start">
+            <div class="flex flex-col items-start">
+                <span class="text-[18px] text-blue-600 font-[600]">Sunday</span>
+                <span>Closed</span>
+            </div>
+       
+            <div class="flex flex-col items-start">
+                <span class="text-[18px] text-blue-600 font-[600]">Saturday</span>
+                <div class="flex flex-row items-center gap-[20px]">
+                    <div class="flex flex-row items-center gap-[4px]">
+                        <span>Open:</span>
+                        <span>24 Hours</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-start">
+                <span class="text-[18px] text-blue-600 font-[600]">Monday - Friday</span>
+                <div class="flex flex-row items-center gap-[20px]">
+                    <div class="flex flex-row items-center gap-[4px]">
+                        <span>Open:</span>
+                        <span class="">24 Hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="w-full md:w-1/2 p-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.495924065302!2d30.111887373505294!3d-1.9550159367195898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca701a4aa0af3%3A0xabc56261f30a4e57!2sAmahoro%20National%20Stadium!5e0!3m2!1sen!2srw!4v1707671035466!5m2!1sen!2srw" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+</section>
 
 
 
@@ -453,16 +505,19 @@
             </div>
         </div>
     </section>
-    <!-- ================ testimonial section end ================= -->     -->
+    
 
     <!-- ================ Hotline Area Starts ================= -->  
    <!-- ================ Hotline Area Start ================= -->
-<section class="hotline-area text-center area-padding">
-    <div class="container">
+<section class=" text-center area-padding w-full bg-blue-700 text-white relative ">
+    <div class="w-full h-full absolute top-0 left-0 opacity-20">
+        <img src="./img/background/bg1.jpg" class="w-full h-full object-cover" />
+    </div>
+    <div class="container w-full">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Emergency Hotline</h2>
-                <span>(+250) 786 882 704</span>
+                <h2 class="text-[32px] fon-[700]">Emergency Hotline</h2>
+                <span class="text-[28px] font-[800]">(+250) 786 882 704</span>
                 <p class="pt-3">We understand emergencies can happen anytime. Our 24/7 customer support is here to assist you. Please don't hesitate to reach out for immediate assistance.</p>
             </div>
         </div>
@@ -561,130 +616,98 @@
     <!--================ End Blog Area =================-->
 
     <!--================ Start Brands Area =================-->
-    <section class="brands-area background_one">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="owl-carousel brand-carousel">
+    <section class="py-40">
+        
+                    <div class="w-full grid grid-cols-4">
                         <!-- single-brand -->
-                        <div class="single-brand-item d-table">
-                            <div class="d-table-cell">
-                                <img src="img/MMI.png" alt="">
-                            </div>
+                        <div class="single-brand-item ">
+                            
+                                <div class="w-[150px]">
+
+                                    <img src="img/MMI.png" class="w-full h-full object-cover" alt="">
+                                </div>
+                           
+                        </div>
+                        <!-- single-brand -->
+                        <div class="single-brand-item ">
+                            
+                                <div class="w-[100px]">
+
+                                <img src="img/RSSB.jpg" class="w-full h-full object-cover" alt="" >
+                                </div>
+
+                      
                         </div>
                         <!-- single-brand -->
                         <div class="single-brand-item d-table">
-                            <div class="d-table-cell">
-                                <img src="img/RSSB.jpg" alt="">
-                            </div>
+                          
+                                <div class="w-[150px]">
+                                <img src="img/sanlam.png"  class="w-full h-full object-cover" alt="">
+                                </div>
+
+                      
                         </div>
                         <!-- single-brand -->
                         <div class="single-brand-item d-table">
-                            <div class="d-table-cell">
-                                <img src="img/sanlam.png" alt="">
-                            </div>
-                        </div>
-                        <!-- single-brand -->
-                        <div class="single-brand-item d-table">
-                            <div class="d-table-cell">
+                            
+                                <div class="w-[100px]">
                                 <img src="img/UZIMA.png" alt="">
-                            </div>
+                                </div>
+
+                        
                         </div>
                         <!-- single-brand -->
-                        <div class="single-brand-item d-table">
-                            <div class="d-table-cell">
-                                <img src="img/minubumwe.png" alt="">
-                            </div>
-                        </div>
+                        
                         <!-- single-brand -->
-                        <div class="single-brand-item d-table">
-                            <div class="d-table-cell">
-                                <img src="img/ASA.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+                        
+              
                 </div>
-            </div>
-        </div>
+       
     </section>
     <!--================ End Brands Area =================-->
 
     <!-- start footer Area -->
-    <footer class="footer-area area-padding-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2 col-sm-6 single-footer-widget">
-                    <h4>Top Products</h4>
-                    <ul>
-                        <li><a href="#">Managed Website</a></li>
-                        <li><a href="#">Manage Reputation</a></li>
-                        <li><a href="#">Power Tools</a></li>
-                        <li><a href="#">Marketing Service</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-sm-6 single-footer-widget">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Brand Assets</a></li>
-                        <li><a href="#">Investor Relations</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-sm-6 single-footer-widget">
-                    <h4>Features</h4>
-                    <ul>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Brand Assets</a></li>
-                        <li><a href="#">Investor Relations</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-sm-6 single-footer-widget">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Guides</a></li>
-                        <li><a href="#">Research</a></li>
-                        <li><a href="#">Experts</a></li>
-                        <li><a href="#">Agencies</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-6 single-footer-widget">
-                    <h4>Newsletter</h4>
-                    <p>You can trust us. we only send promo offers,</p>
-                    <div class="form-wrap" id="mc_embed_signup">
-                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                        method="get" class="form-inline">
-                        <input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'"
-                        required="" type="email" />
-                        <button class="click-btn btn btn-default">
-                            <i class="ti-arrow-right"></i>
-                        </button>
-                        <div style="position: absolute; left: -5000px;">
-                            <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text" />
-                        </div>
-
-                        <div class="info"></div>
-                    </form>
-                </div>
+    <div class="w-full bg-blue-800 flex flex-col gap-[10px] p-4">
+        <div class="w-full flex flex-row items-center justify-between py-4 border-b border-white/40">
+            <div>
+                <h1 class="text-[24px] font-[800] text-white">Logo</h1>
+                
+            </div>
+            <div class="flex text-white flex-row items-center gap-[10px]">
+                <span>&copy; 2024 ELLIOPHARMA inc</span>
+            </div>
+            <div class="flex flex-row gap-[10px]">
+                <a href="#" class="p-2  px-3 flex items-center justify-center"><i class="fab fa-facebook-f text-white"></i></a>
+                <a href="#" class="p-2  px-3 flex items-center justify-center"><i class="fab fa-twitter text-white"></i></a>
+                <a href="#" class="p-2  px-3 flex items-center justify-center"><i class="fab fa-instagram text-white"></i></a>
             </div>
         </div>
-        <div class="row footer-bottom d-flex justify-content-between">
-            <p class="col-lg-8 col-sm-12 footer-text m-0">
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |Developed by <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Albert</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-            <div class="col-lg-4 col-sm-12 footer-social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+        <div class=" grid grid-cols-2 md:grid-cols-2 py-4 gap-[20px] ">
+            <div class="flex flex-col gap-[10px]">
+                <h1 class="text-[24px] font-[500] text-white">Links</h1>
+                <div class="grid grid-cols-2 gap-[20px]">                 
+                    <a href="" class="text-white">About</a>
+                    <a href="" class="text-white">Blog</a>
+                    <a href="" class="text-white">Home</a>
+                    <a href="" class="text-white">Contact</a>
+                </div>
             </div>
+            <div class="flex flex-col gap-[10px] w-full">
+                <h1 class="text-[24px] font-[500] text-white">Our Mission</h1>
+                <div class="grid grid-cols-2">                 
+              <span class="text-white/80 font-[300]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae natus tempora suscipit voluptas tenetur laborum! Sint molestias quae odit assumenda, accusantium iure quibusdam, quisquam, qui nihil enim molestiae. Deleniti, sint.</span>
+                </div>
+            </div>
+
         </div>
     </div>
-</footer>
+
 <!-- End footer Area -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+   AOS.init();
+</script>
+
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
