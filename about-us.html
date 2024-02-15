@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!--================Header Menu Area =================-->
     <header class="header_area">
       <div class="top_menu row m0">
@@ -126,35 +126,30 @@
     <!--================Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    <section class="banner_area">
-      <div class="banner_inner d-flex align-items-center">
-        <div class="container">
-          <div
-            class="banner_content d-md-flex justify-content-between align-items-center"
-          >
-            <div class="mb-3 mb-md-0">
-              <h2 class="" style="color: black;" >About Us</h2>
-              <p>Belding years moveth earth green behold wherein</p>
-            </div>
-            <div class="page_link">
-              <a href="index.html">Home</a>
-              <a href="contact.html">About Us</a>
-            </div>
-          </div>
-        </div>
+    <section class="banner_area realtive overflow-hidden w-full">
+      <div class="w-full h-full z-10 bg-black/0 absolute top-0">
+        <img src="./img/teamPic.jpg" class="w-full blur-[6px] h-full object-cover -z-10 " alt="">
+      </div>
+      <div class="w-full h-full z-20 bg-black/50 absolute p-4"></div>
+      <div class=" z-40 absolute flex items-center justify-content h-full w-full align-items-center">
+        <h1 class="text-[28px] text-white mx-auto font-[900]">Belding years moveth earth green behold wherein</h1>
+     
+             
+         
+        
       </div>
     </section>
     <!--================End Home Banner Area =================-->
 
     <!--================About  Area =================-->
-    <section class="flex flex-row py-10 items-start ">
-        <div class="w-full md:w-1/2 px-20 ">
-            <img src="./img/welcome.png" class="rounded-[12px]" />
+    <section class="flex flex-col lg:flex-row py-20 items-start ">
+        <div class="w-full lg:w-1/2 px-20 ">
+            <img src="./img/aboutus_illu.jpg" class="rounded-[12px]" />
         </div>
-      <div class="w-full md:w-1/2 gap-[20px] flex flex-col">
-        <h4 class="text-[24px] text-black font-[800]">
-          Second Abundantly<br />
-          Move That Cattle Perform<br />
+      <div class="w-full lg:w-1/2 gap-[20px] items-center p-2 lg:items-start flex flex-col">
+        <h4 class="text-[32px] text-center text-black font-[800] max-w-[500px]">
+          Second Abundantly
+          Move That Cattle Perform
           Appen Land
         </h4>
         <h6>
@@ -171,7 +166,49 @@
         <a class="link_one" href="#">learn more</a>
       </div>
     </section>
-    <!--================About Area End =================-->
+    
+    <section class="w-full flex flex-col items-center md:items-start gap-[20px] p-10 md:px-20">
+      <div>
+
+        <h1 class="text-[32px] font-[800]">Out Team</h1>
+        <span>inventore facilis blanditiis dolor omnis pariatur, soluta nobis!</span>
+      </div>
+      <div class="grid grid-cols-1 gap-[20px] md:gap-[40px] md:grid-cols-3 w-full">
+        <div class="flex flex-col w-full gap-[10px]">
+          <div class="h-[40vh] w-full">
+            <img src="./img/profile1.jpg" class="w-full h-full rounded-[4px] object-cover" alt="">
+
+          </div>
+          <div>
+            <h1 class="text-[18px] text-black">Byiringiro Aime</h1>
+            <span>Ceo</span>
+          </div>
+        </div>
+        <div class="flex flex-col w-full gap-[10px]">
+          <div class="h-[40vh] w-full">
+            <img src="./img/profile5.webp" class="w-full h-full rounded-[4px] object-cover " alt="">
+
+          </div>
+          <div>
+            <h1 class="text-[18px] text-black">Umutesi Devine</h1>
+            <span>Nurse</span>
+          </div>
+        </div>
+        <div class="flex flex-col w-full gap-[10px]">
+          <div class="h-[40vh] w-full">
+            <img src="./img/profile4jpg.avif" class="w-full h-full rounded-[4px] object-cover" alt="">
+
+          </div>
+          <div>
+            <h1 class="text-[18px] text-black">Byiringiro Aime</h1>
+            <span>Ceo</span>
+          </div>
+        </div>
+      
+      </div>
+      
+
+    </section>
 
     <!--================ appointment Area Starts =================-->
     <section class="appointment-area area-padding-top">
@@ -437,148 +474,92 @@
     <!-- ================ testimonial section end ================= -->
 
     <!--================ Start Brands Area =================-->
-    <section class="brands-area background_one">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <div class="owl-carousel brand-carousel">
+   
+    <section class="py-40">
+        
+                    <div class="w-full grid grid-cols-4">
                         <!-- single-brand -->
-                        <div class="single-brand-item d-table">
-                            <div class="d-table-cell">
-                                <img src="img/MMI.png" alt="">
-                            </div>
+                        <div class="single-brand-item ">
+                            
+                                <div class="w-[150px]">
+
+                                    <img src="img/MMI.png" class="w-full h-full object-cover" alt="">
+                                </div>
+                           
+                        </div>
+                        <!-- single-brand -->
+                        <div class="single-brand-item ">
+                            
+                                <div class="w-[100px]">
+
+                                <img src="img/RSSB.jpg" class="w-full h-full object-cover" alt="" >
+                                </div>
+
+                     
                         </div>
                         <!-- single-brand -->
                         <div class="single-brand-item d-table">
-                            <div class="d-table-cell" style="width:100px;">
-                                <img src="img/RSSB.jpg" alt="" >
-                            </div>
+                          
+                                <div class="w-[150px]">
+                                <img src="img/sanlam.png"  class="w-full h-full object-cover" alt="">
+                                </div>
+
+                      
                         </div>
                         <!-- single-brand -->
                         <div class="single-brand-item d-table">
-                            <div class="d-table-cell">
-                                <img src="img/sanlam.png" alt="">
-                            </div>
-                        </div>
-                        <!-- single-brand -->
-                        <div class="single-brand-item d-table">
-                            <div class="d-table-cell" style="width:100px;">
+                            
+                                <div class="w-[100px]">
                                 <img src="img/UZIMA.png" alt="">
-                            </div>
-                        </div>
-                        <div class="single-brand-item d-table">
-                            <div class="d-table-cell" style="width:100px;">
-                                <img src="img/UZIMA.png" alt="">
-                            </div>
+                                </div>
+
+                        
                         </div>
                         <!-- single-brand -->
                         
                         <!-- single-brand -->
                         
-                    </div>
+              
                 </div>
-            </div>
-        </div>
+       
     </section>
     <!--================ End Brands Area =================-->
 
     <!-- start footer Area -->
-    <footer class="footer-area area-padding-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-2 col-sm-6 single-footer-widget">
-            <h4>Top Products</h4>
-            <ul>
-              <li><a href="#">Managed Website</a></li>
-              <li><a href="#">Manage Reputation</a></li>
-              <li><a href="#">Power Tools</a></li>
-              <li><a href="#">Marketing Service</a></li>
-            </ul>
+    <div class="w-full bg-blue-800 flex flex-col gap-[10px] p-4">
+      <div class="w-full flex flex-row items-center justify-between py-4 border-b border-white/40">
+          <div>
+              <h1 class="text-[24px] font-[800] text-white">Logo</h1>
+              
           </div>
-          <div class="col-lg-2 col-sm-6 single-footer-widget">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Brand Assets</a></li>
-              <li><a href="#">Investor Relations</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
+          <div class="flex text-white flex-row items-center gap-[10px]">
+              <span>&copy; 2024 ELLIOPHARMA inc</span>
           </div>
-          <div class="col-lg-2 col-sm-6 single-footer-widget">
-            <h4>Features</h4>
-            <ul>
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Brand Assets</a></li>
-              <li><a href="#">Investor Relations</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
+          <div class="flex flex-row gap-[10px]">
+              <a href="#" class="p-2  px-3 flex items-center justify-center"><i class="fab fa-facebook-f text-white"></i></a>
+              <a href="#" class="p-2  px-3 flex items-center justify-center"><i class="fab fa-twitter text-white"></i></a>
+              <a href="#" class="p-2  px-3 flex items-center justify-center"><i class="fab fa-instagram text-white"></i></a>
           </div>
-          <div class="col-lg-2 col-sm-6 single-footer-widget">
-            <h4>Resources</h4>
-            <ul>
-              <li><a href="#">Guides</a></li>
-              <li><a href="#">Research</a></li>
-              <li><a href="#">Experts</a></li>
-              <li><a href="#">Agencies</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-6 single-footer-widget">
-            <h4>Newsletter</h4>
-            <p>You can trust us. we only send promo offers,</p>
-            <div class="form-wrap" id="mc_embed_signup">
-              <form
-                target="_blank"
-                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                method="get"
-                class="form-inline"
-              >
-                <input
-                  class="form-control"
-                  name="EMAIL"
-                  placeholder="Your Email Address"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = 'Your Email Address'"
-                  required=""
-                  type="email"
-                />
-                <button class="click-btn btn btn-default">
-                  <i class="ti-arrow-right"></i>
-                </button>
-                <div style="position: absolute; left: -5000px">
-                  <input
-                    name="b_36c4fd991d266f23781ded980_aefe40901a"
-                    tabindex="-1"
-                    value=""
-                    type="text"
-                  />
-                </div>
-
-                <div class="info"></div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="row footer-bottom d-flex justify-content-between">
-          <p class="col-lg-8 col-sm-12 footer-text m-0">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            All rights reserved | This template is made with
-            <i class="fa fa-heart" aria-hidden="true"></i> by
-            <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
-          <div class="col-lg-4 col-sm-12 footer-social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-dribbble"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-          </div>
-        </div>
       </div>
-    </footer>
+      <div class=" grid grid-cols-2 md:grid-cols-2 py-4 gap-[20px] ">
+          <div class="flex flex-col gap-[10px]">
+              <h1 class="text-[24px] font-[500] text-white">Links</h1>
+              <div class="grid grid-cols-2 gap-[20px]">                 
+                  <a href="" class="text-white">About</a>
+                  <a href="" class="text-white">Blog</a>
+                  <a href="" class="text-white">Home</a>
+                  <a href="" class="text-white">Contact</a>
+              </div>
+          </div>
+          <div class="flex flex-col gap-[10px] w-full">
+              <h1 class="text-[24px] font-[500] text-white">Our Mission</h1>
+              <div class="grid grid-cols-2">                 
+            <span class="text-white/80 font-[300]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae natus tempora suscipit voluptas tenetur laborum! Sint molestias quae odit assumenda, accusantium iure quibusdam, quisquam, qui nihil enim molestiae. Deleniti, sint.</span>
+              </div>
+          </div>
+
+      </div>
+  </div>
     <!-- End footer Area -->
 
     <!-- Optional JavaScript -->
